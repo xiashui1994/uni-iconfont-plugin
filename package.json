@@ -1,16 +1,45 @@
 {
   "name": "uni-iconfont-plugin",
   "version": "1.0.0",
-  "description": "",
+  "description": "uni-app iconfont",
   "main": "index.js",
+  "bin": {
+    "iconfont-init": "./dist/commands/init.js"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "compile": "tsc -p ./"
   },
   "repository": {
     "type": "git",
     "url": "https://gitee.com/xiashui/uni-iconfont-plugin.git"
   },
-  "keywords": [],
-  "author": "",
-  "license": "MIT"
+  "keywords": [
+    "uni",
+    "uni-app",
+    "iconfont",
+    "uni-iconfont",
+    "uni-iconfont-plugin"
+  ],
+  "author": "xiashui",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "colors": "^1.4.0",
+    "fs-extra": "^10.0.1",
+    "glob": "^7.2.0",
+    "minimist": "^1.2.6",
+    "mkdirp": "^1.0.4",
+    "tslib": "^2.3.1",
+    "xml2js": "^0.4.23"
+  },
+  "devDependencies": {
+    "@types/fs-extra": "^9.0.13",
+    "@types/glob": "^7.2.0",
+    "@types/minimist": "^1.2.2",
+    "@types/mkdirp": "^1.0.2",
+    "@types/node": "^17.0.23",
+    "@types/xml2js": "^0.4.9",
+    "ts-node": "^10.7.0",
+    "typescript": "^4.6.3"
+  }
 }
