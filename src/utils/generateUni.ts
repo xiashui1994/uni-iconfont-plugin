@@ -29,6 +29,12 @@ export const generateUni = (data: XmlData, config: Config) => {
     console.log(`${colors.green('√')} Generated icon "${colors.yellow(iconId)}"`);
   });
 
+  svgFunctions.push(`export default {${names.join(',')}}`);
+
+  const namesTypes = names.map(name => `export declare function ${name}({quot, svgSize, isStr, colors}: Options): string;`);
+  namesTypes.unshift('export declare interface Options {quot: string, svgSize?: string, isStr: boolean, colors: string | string[]}');
+
   fs.writeFileSync(path.join(saveDir, fileName + '.js'), svgFunctions.join('\n'));
+  fs.writeFileSync(path.join(saveDir, fileName + '.d.ts'), namesTypes.join('\n'));
   console.log(`\n${colors.green('√')} All icons have been putted into dir: ${colors.green(config.save_dir)}\n`);
 }
