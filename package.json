@@ -4,7 +4,8 @@
   "description": "uni-app iconfont",
   "main": "index.js",
   "bin": {
-    "iconfont-init": "./dist/commands/init.js"
+    "iconfont-init": "./dist/commands/init.js",
+    "iconfont-uni": "./dist/commands/create.js"
   },
   "scripts": {
     "compile": "tsc -p ./"

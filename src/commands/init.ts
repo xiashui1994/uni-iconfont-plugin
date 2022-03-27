@@ -22,6 +22,6 @@ const targetFile = path.resolve(outputPath);
 if (fs.existsSync(targetFile)) {
   console.error(colors.red(`File "${outputPath}" was created before.`));
 } else {
-  fse.copySync(path.join(__dirname, '../../src/libs/iconfont.json'), targetFile);
+  fse.copySync(path.join(__dirname, '../libs/iconfont.json'), targetFile);
   console.log(colors.green(`File "${outputPath}" is created now. We recommend you add it to version control.`));
 }
