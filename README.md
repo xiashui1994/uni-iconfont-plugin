@@ -92,3 +92,6 @@ npx iconfont-uni
 # 修改symbol_url配置后执行
 npx iconfont-uni
 ```
+
+# 参考组件库
+[mini-program-iconfont-cli](https://github.com/iconfont-cli/mini-program-iconfont-cli)
