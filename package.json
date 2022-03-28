@@ -1,7 +1,7 @@
 {
   "name": "uni-iconfont-plugin",
   "version": "1.0.0",
-  "description": "uni-app iconfont",
+  "description": "让uni-app支持iconfont图标以Symbol方式引入使用，支持彩色图标，兼容全平台",
   "main": "index.js",
   "bin": {
     "iconfont-init": "./dist/commands/init.js",

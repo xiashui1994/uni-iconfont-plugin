@@ -64,3 +64,7 @@ const addAttribute = (domName: string, sub: XmlData['svg']['symbol'][number]['pa
 
   return template;
 };
+
+export const hyphen2Hump = (str: string) => {
+  return str.replace(/-(\w)/g, (_match, letter) => letter.toUpperCase());
+}
