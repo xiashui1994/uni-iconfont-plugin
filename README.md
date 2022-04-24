@@ -46,7 +46,7 @@ npx iconfont-init
 ```json
 {
   "symbol_url": "请参考README.md，复制 http://iconfont.cn 官网提供的JS链接",
-  "save_dir": "./iconfont",
+  "save_dir": "./src/iconfont",
   "trim_icon_prefix": "icon",
   "default_icon_size": "32rpx"
 }
