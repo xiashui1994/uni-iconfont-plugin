@@ -2,6 +2,8 @@
 
 让uni-app支持iconfont图标以Symbol方式引入使用，支持彩色图标，兼容全平台。
 
+> 暂不支持`nvue`
+
 ![](./images/bangbangtang.png)
 
 # uni-app已经支持iconfont图标，为什么还需要这个插件？
