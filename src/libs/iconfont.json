@@ -1,5 +1,5 @@
 {
-  "symbol_url": "请参考README.md，复制 http://iconfont.cn 官网提供的JS链接",
+  "symbol_url": "请参考README.md，复制 http://iconfont.cn 官网提供的JS链接，或提供本地iconfont的JS地址，例：./iconfont.js",
   "save_dir": "./src/iconfont",
   "trim_icon_prefix": "icon",
   "default_icon_size": "32rpx"

@@ -1,6 +1,8 @@
 import axios from 'axios';
 import { ParserOptions, parseString } from 'xml2js';
 import colors from 'colors';
+import path from 'path';
+import fs from 'fs';
 
 export interface XmlData {
   svg: {
@@ -23,7 +25,7 @@ export const fetchXml = async (url: string): Promise<XmlData> => {
   console.log('Fetching iconfont data...');
 
   try {
-    const { data } = await axios.get<string>(url);
+    const { data } = /^(https?:)?\/\//.test(url) ? await axios.get<string>(url) : { data: fs.readFileSync(path.resolve(url)) };
     const matches = String(data).match(/'<svg>(.+?)<\/svg>'/);
 
     if (matches) {

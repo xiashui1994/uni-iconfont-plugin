@@ -35,7 +35,7 @@ export const getConfig = () => {
 
   const config = require(targetFile) as Config;
 
-  if (!config.symbol_url || !/^(https?:)?\/\//.test(config.symbol_url)) {
+  if (!config.symbol_url || (!/^(https?:)?\/\//.test(config.symbol_url) && !fs.existsSync(path.resolve(config.symbol_url)))) {
     console.warn(colors.red('You are required to provide symbol_url'));
     process.exit(1);
   }

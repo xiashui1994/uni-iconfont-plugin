@@ -47,7 +47,7 @@ npx iconfont-init
 在根目录下会生成一个`iconfont.json`的配置文件:
 ```json
 {
-  "symbol_url": "请参考README.md，复制 http://iconfont.cn 官网提供的JS链接",
+  "symbol_url": "请参考README.md，复制 http://iconfont.cn 官网提供的JS链接，或提供本地iconfont的JS地址，例：./iconfont.js",
   "save_dir": "./src/iconfont",
   "trim_icon_prefix": "icon",
   "default_icon_size": "32rpx"
@@ -55,7 +55,7 @@ npx iconfont-init
 ```
 ### 配置文件说明
 
-**symbol_url**: 请直接复制iconfont官网提供的项目图标Symbol链接。测试链接：http://at.alicdn.com/t/font_2662316_eabpkqkyqt8.js
+**symbol_url**: 请直接复制iconfont官网提供的项目图标Symbol链接或提供本地iconfont的JS地址，例：'./iconfont.js'。测试链接：http://at.alicdn.com/t/font_2662316_eabpkqkyqt8.js
 
 **save_dir** 生成的icon文件保存目录。每次生成前，都会清空该目录。
 
