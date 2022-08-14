@@ -6,7 +6,7 @@ const ATTRIBUTE_FILL_MAP = ['path'];
 export const generateCase = (data: XmlData['svg']['symbol'][number], config?: {
   hexToRgb:boolean,
 }) => {
-  let template = `<svg viewBox='${data.$.viewBox}' xmlns='http://www.w3.org/2000/svg' width='$\{svgSize\}' height='$\{svgSize\}'>`;
+  let template = `<svg viewBox='${data.$.viewBox}' xmlns='http://www.w3.org/2000/svg' width='100%' height='100%'>`;
 
   for (const domName of Object.keys(data)) {
     if (domName === '$') {
